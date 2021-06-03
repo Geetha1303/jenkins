@@ -1,6 +1,6 @@
- folder {'CI-Pipelines'} {
-   displayname{'CI pipelines'}
-   description{'CI pipelines'}
+ folder ('CI-Pipelines') {
+   displayname('CI pipelines')
+   description('CI pipelines')
    }
 pipelinejob{'CI-Pipelines/frontend-ci'} {
  configure { Flowdefinition ->
