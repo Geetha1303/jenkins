@@ -22,7 +22,7 @@
                      'userRemoteConfigs' {
                          'hudson.plugins.git.UserRemoteConfig' {
                              'url'('https://github.com/Geetha1303/'+j+'.git')
-                             'refspec'('\'+refs/tags/*\':\'refs/remotes/origin/tags/*\'')
+                             'refspec'('+refs/tags/*:refs/remotes/origin/tags/*')
                          }
                      }
                      'branches' {
