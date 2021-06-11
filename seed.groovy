@@ -21,8 +21,8 @@
                  'scm'(class: 'hudson.plugins.git.GitSCM', plugin: 'git') {
                      'userRemoteConfigs' {
                          'hudson.plugins.git.UserRemoteConfig' {
-                             'url' { 'https://github.com/Geetha1303/' + j + '.git' }
-                             'refspec' { '\'+refs/tags/*\':\'refs/emotes/origin/tags/*\'' }
+                             'url' { 'https://github.com/Geetha1303/'+j+'.git' }
+                             'refspec' { '\'+refs/tags/*\':\'refs/remotes/origin/tags/*\'' }
                          }
                      }
                      'branches' {
