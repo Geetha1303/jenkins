@@ -33,7 +33,7 @@
                          }
                      }
                  }
-                 'scriptpath'('jenkinsfile')
+                 'scriptPath'('jenkinsfile')
                  'lightweight' (true)
              }
          }
