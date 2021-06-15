@@ -2,7 +2,7 @@
    displayName('CI_pipelines')
    description('CI_pipelines')
    }
- def component=["cart", "catalogue", "user", "payment", "shipping", "frontend"]
+ def component=["cart","catalogue","user","payment","shipping","frontend"]
  def count=(component.size()-1)
  for (i in 0..count) {
      def j=component[i]
@@ -22,7 +22,7 @@
                      'userRemoteConfigs' {
                          'hudson.plugins.git.UserRemoteConfig' {
                              'url'('https://github.com/Geetha1303/'+j+'.git')
-                             'refspec'('\'+refs/tags/*\':\'refs/remotes/origin/tags/*\'')
+                             'refspec'('\'+refs/tags/*\':\'refs/remotes/main/tags/*\'')
                          }
                      }
                      'branches' {
