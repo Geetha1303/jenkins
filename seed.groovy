@@ -7,7 +7,7 @@
  //for (i in 0..count) {
     // def j=component[i]
      //println(j);
-     pipelineJob("CI-Pipelines/frontend-ci") {
+     pipelineJob('CI-Pipelines/frontend-ci') {
          //println("CI-Pipelines/${j}-ci")
          configure { flowdefinition ->
              flowdefinition / 'properties' << 'org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty' {
