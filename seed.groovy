@@ -24,6 +24,7 @@
                      'userRemoteConfigs' {
                          'hudson.plugins.git.UserRemoteConfig' {
                              'url'('https://github.com/Geetha1303/'+j+'.git')
+                             println('https://github.com/Geetha1303/'+j+'.git')
                          }
                      }
                      'branches' {
