@@ -2,7 +2,7 @@
    displayName('CI_pipelines')
    description('CI_pipelines')
    }
- def component=["frontend","catalogue","user","payment","shipping","cart"];
+ def component=["frontend"];
  def count=(component.size()-1)
  for (i in 0..count) {
      def j=component[i]
