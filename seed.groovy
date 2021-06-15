@@ -2,13 +2,13 @@
    displayName('CI_pipelines')
    description('CI_pipelines')
    }
- def component=["cart","catalogue","user","payment","shipping","frontend"]
+ def component=["cart","catalogue","user","payment","shipping","frontend"];
  def count=(component.size()-1)
  for (i in 0..count) {
      def j=component[i]
      println(j);
-     pipelineJob("CI-Pipelines/"+j+"-ci") {
-         println("CI-Pipelines/"+j+"-ci");
+     pipelineJob("CI-Pipelines/${j}-ci") {
+         println("CI-Pipelines/${j}-ci");
          configure { flowdefinition ->
              flowdefinition / 'properties' << 'org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty' {
                  'triggers' {
