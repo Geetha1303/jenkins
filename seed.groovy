@@ -8,6 +8,7 @@
      def j=component[i]
      println(j);
      pipelineJob("CI-Pipelines/"+j+"-ci") {
+         println(j);
          configure { flowdefinition ->
              flowdefinition / 'properties' << 'org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty' {
                  'triggers' {
