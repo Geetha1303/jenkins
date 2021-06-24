@@ -1,4 +1,4 @@
-def call(prep params=[:]) {
+def call(prep params= [:]) {
     def args=[
             NEXUS_IP: '172.31.8.88'
     ]
