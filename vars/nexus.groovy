@@ -13,7 +13,7 @@ def make_artifacts(APP_TYPE, COMPONENT) {
    def FILENAME=COMPONENT+'-'+get_branch_exec+'.zip'
    if(APP_TYPE == "NGINX") {
       command="cd static && zip -r ../${FILENAME}"
-      def execute_com=sh(r-eturnStdout: true, script: command)
+      def execute_com=sh(returnStdout: true, script: command)
       printexecute_com
    } else if(APP_TYPE == "NODEJS") {
      command="zip -r ${FILENAME} node_modules server.js"
