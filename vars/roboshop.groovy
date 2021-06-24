@@ -38,7 +38,7 @@ def call(Map params = [:]) {
                 steps{
                     script{
                         prepare=new nexus()
-                        prepare.nexus{COMPONENT}
+                        prepare.nexus("${COMPONENT}")
                     }
                 }
             }
