@@ -1,8 +1,11 @@
-def call(prep params= [:]) {
+def call(Map params = [:]) {
+    // start Default Arguments
     def args=[
             NEXUS_IP: '172.31.8.88'
     ]
     args << params
+
+    // End Default + Required Arguments
     pipeline {
         agent {
             label"${args.SLAVE_LABEL}"
